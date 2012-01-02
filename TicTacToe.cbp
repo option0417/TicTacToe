@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="TicTacToe" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/TicTacToe" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-lpthread" />
+					<Add library="src/test/gtest_main.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/TicTacToe" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/Board.h" />
+		<Unit filename="include/BoardView.h" />
+		<Unit filename="include/Common.h" />
+		<Unit filename="include/Core.h" />
+		<Unit filename="include/Element.h" />
+		<Unit filename="include/EvalOverGameRule.h" />
+		<Unit filename="include/EvalPairValue.h" />
+		<Unit filename="include/EvalSingleValue.h" />
+		<Unit filename="include/Evaluation.h" />
+		<Unit filename="include/IBoard.h" />
+		<Unit filename="include/IElement.h" />
+		<Unit filename="include/IRule.h" />
+		<Unit filename="include/IndexBoundRule.h" />
+		<Unit filename="include/IsExistRule.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Board.cpp" />
+		<Unit filename="src/BoardView.cpp" />
+		<Unit filename="src/Common.cpp" />
+		<Unit filename="src/Core.cpp" />
+		<Unit filename="src/Element.cpp" />
+		<Unit filename="src/EvalOverGameRule.cpp" />
+		<Unit filename="src/EvalPairValue.cpp" />
+		<Unit filename="src/EvalSingleValue.cpp" />
+		<Unit filename="src/Evaluation.cpp" />
+		<Unit filename="src/IBoard.cpp" />
+		<Unit filename="src/IElement.cpp" />
+		<Unit filename="src/IRule.cpp" />
+		<Unit filename="src/IndexBoundRule.cpp" />
+		<Unit filename="src/IsExistRule.cpp" />
+		<Unit filename="src/test/TestManager.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
