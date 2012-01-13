@@ -6,11 +6,15 @@
 
 class Evaluation {
 public:
+	static Evaluation* getInstance(IBoard*);
+    int getEvaluateValue();
+
+    void addRule(IRule*);
+private:
     Evaluation(IBoard*);
     ~Evaluation();
 
-    int getEvaluateValue();
-private:
+    static Evaluation* instance;
     IBoard* board;
     IRule* rule;
     Position* pos;

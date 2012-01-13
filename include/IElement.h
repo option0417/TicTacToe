@@ -13,12 +13,14 @@ public:
     void setStatus(Status );
     int getID();
     Status getStatus();
+    Status getPreStatus();
 
     virtual void identify() = 0;
 
 private:
     int id;
     Status status;
+    Status preStatus;
 };
 
 #endif // IELEMENT_H

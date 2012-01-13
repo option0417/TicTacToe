@@ -9,11 +9,12 @@ class IBoard {
   IBoard();
   virtual ~IBoard();
 
-  void setElement(Position*, bool);
+  void placeElement(Position*, bool);
   IElement* getElement(Position*);
 
   void initial();
   void destory();
+  virtual IBoard* clone() = 0;
  protected:
   IElement* board[3][3];
 

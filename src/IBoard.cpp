@@ -6,7 +6,7 @@ IBoard::IBoard() {}
 
 IBoard::~IBoard() {}
 
-void IBoard::setElement(Position* pos, bool turn) {
+void IBoard::placeElement(Position* pos, bool turn) {
     switch(turn) {
         case true:
             board[pos->getX()][pos->getY()]->setStatus(O);
@@ -22,7 +22,6 @@ void IBoard::setElement(Position* pos, bool turn) {
 IElement* IBoard::getElement(Position* pos) {
     return board[pos->getX()][pos->getY()];
 }
-
 
 void IBoard::initial() {
     initProcess();

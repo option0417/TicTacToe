@@ -1,14 +1,16 @@
 # depslib dependency file v1.0
-1324920126 source:/home/option0417/Dev/Workspace/TicTacToe/main.cpp
+1325924137 source:/home/option0417/Dev/Workspace/TicTacToe/main.cpp
+	<cstdlib>
 	<iostream>
-	"gtest/gtest.h"
 	"include/Core.h"
+	"include/Board.h"
+	"include/AlphaBeta.h"
 
-1324714531 source:/home/option0417/Dev/Workspace/TicTacToe/src/IElement.cpp
+1325955151 source:/home/option0417/Dev/Workspace/TicTacToe/src/IElement.cpp
 	"../include/IElement.h"
 	<iostream>
 
-1325409255 /home/option0417/Dev/Workspace/TicTacToe/include/IElement.h
+1325955140 /home/option0417/Dev/Workspace/TicTacToe/include/IElement.h
 	"Common.h"
 
 1324714540 source:/home/option0417/Dev/Workspace/TicTacToe/src/ElementO.cpp
@@ -36,106 +38,134 @@
 	"gtest/gtest.h"
 	"../../include/Element.h"
 
-1325413083 source:/home/option0417/Dev/Workspace/TicTacToe/src/IBoard.cpp
+1325869140 source:/home/option0417/Dev/Workspace/TicTacToe/src/IBoard.cpp
 	"../include/IBoard.h"
 	"../include/Element.h"
 	<iostream>
 
-1325410223 /home/option0417/Dev/Workspace/TicTacToe/include/IBoard.h
+1325869140 /home/option0417/Dev/Workspace/TicTacToe/include/IBoard.h
 	"IElement.h"
 	"Common.h"
 
-1324919994 source:/home/option0417/Dev/Workspace/TicTacToe/src/Element.cpp
+1325686429 source:/home/option0417/Dev/Workspace/TicTacToe/src/Element.cpp
 	"../include/Element.h"
 	<iostream>
 
-1324715560 /home/option0417/Dev/Workspace/TicTacToe/include/Element.h
+1325686429 /home/option0417/Dev/Workspace/TicTacToe/include/Element.h
 	"IElement.h"
 
-1325410474 /home/option0417/Dev/Workspace/TicTacToe/include/BoardView.h
+1325686429 /home/option0417/Dev/Workspace/TicTacToe/include/BoardView.h
 	"IBoard.h"
 
-1325412879 source:/home/option0417/Dev/Workspace/TicTacToe/src/BoardView.cpp
+1325686429 source:/home/option0417/Dev/Workspace/TicTacToe/src/BoardView.cpp
 	<iostream>
 	"../include/BoardView.h"
 
-1325409755 /home/option0417/Dev/Workspace/TicTacToe/include/Core.h
+1325686429 /home/option0417/Dev/Workspace/TicTacToe/include/Core.h
 	"IBoard.h"
 	"BoardView.h"
 	"Evaluation.h"
 	"IRule.h"
 	"Common.h"
 
-1325413017 source:/home/option0417/Dev/Workspace/TicTacToe/src/Core.cpp
+1325861308 source:/home/option0417/Dev/Workspace/TicTacToe/src/Core.cpp
 	"../include/Core.h"
 	"../include/Board.h"
 	"../include/IsExistRule.h"
 	"../include/IndexBoundRule.h"
 	<iostream>
 
-1324919952 source:/home/option0417/Dev/Workspace/TicTacToe/src/Board.cpp
+1325869897 source:/home/option0417/Dev/Workspace/TicTacToe/src/Board.cpp
 	"../include/Board.h"
 	"../include/Element.h"
 	<iostream>
 
-1324917700 /home/option0417/Dev/Workspace/TicTacToe/include/Board.h
+1325869397 /home/option0417/Dev/Workspace/TicTacToe/include/Board.h
 	"IBoard.h"
 
-1325410035 source:/home/option0417/Dev/Workspace/TicTacToe/src/IRule.cpp
+1325686429 source:/home/option0417/Dev/Workspace/TicTacToe/src/IRule.cpp
 	"../include/IRule.h"
 	<iostream>
 
-1325410024 /home/option0417/Dev/Workspace/TicTacToe/include/IRule.h
+1325686429 /home/option0417/Dev/Workspace/TicTacToe/include/IRule.h
 	"IBoard.h"
 	"Common.h"
 
-1325410122 source:/home/option0417/Dev/Workspace/TicTacToe/src/IndexBoundRule.cpp
+1325686429 source:/home/option0417/Dev/Workspace/TicTacToe/src/IndexBoundRule.cpp
 	"../include/IndexBoundRule.h"
 	<iostream>
 
-1325410076 /home/option0417/Dev/Workspace/TicTacToe/include/IndexBoundRule.h
+1325686429 /home/option0417/Dev/Workspace/TicTacToe/include/IndexBoundRule.h
 	"IRule.h"
 
-1325410164 source:/home/option0417/Dev/Workspace/TicTacToe/src/IsExistRule.cpp
+1325686429 source:/home/option0417/Dev/Workspace/TicTacToe/src/IsExistRule.cpp
 	"../include/IsExistRule.h"
 	<iostream>
 
-1325410143 /home/option0417/Dev/Workspace/TicTacToe/include/IsExistRule.h
+1325686429 /home/option0417/Dev/Workspace/TicTacToe/include/IsExistRule.h
 	"IRule.h"
 
-1325407993 source:/home/option0417/Dev/Workspace/TicTacToe/src/EvalOverGameRule.cpp
+1325686429 source:/home/option0417/Dev/Workspace/TicTacToe/src/EvalOverGameRule.cpp
 	"../include/EvalOverGameRule.h"
 	<iostream>
 
-1325404799 /home/option0417/Dev/Workspace/TicTacToe/include/EvalOverGameRule.h
+1325686429 /home/option0417/Dev/Workspace/TicTacToe/include/EvalOverGameRule.h
 	"IRule.h"
 
-1325412994 source:/home/option0417/Dev/Workspace/TicTacToe/src/Evaluation.cpp
+1325862299 source:/home/option0417/Dev/Workspace/TicTacToe/src/Evaluation.cpp
 	"../include/Evaluation.h"
 	"../include/EvalOverGameRule.h"
 	"../include/EvalPairValue.h"
 	"../include/EvalSingleValue.h"
+	"../include/EvalDPairValue.h"
+	<iostream>
 
-1325410816 /home/option0417/Dev/Workspace/TicTacToe/include/Evaluation.h
+1325862186 /home/option0417/Dev/Workspace/TicTacToe/include/Evaluation.h
 	"IBoard.h"
 	"IRule.h"
 
-1325407993 source:/home/option0417/Dev/Workspace/TicTacToe/src/EvalPairValue.cpp
+1325686429 source:/home/option0417/Dev/Workspace/TicTacToe/src/EvalPairValue.cpp
 	"../include/EvalPairValue.h"
 	<iostream>
 
-1325408298 /home/option0417/Dev/Workspace/TicTacToe/include/EvalPairValue.h
+1325686429 /home/option0417/Dev/Workspace/TicTacToe/include/EvalPairValue.h
 	"IRule.h"
 
-1325408680 source:/home/option0417/Dev/Workspace/TicTacToe/src/EvalSingleValue.cpp
+1325686429 source:/home/option0417/Dev/Workspace/TicTacToe/src/EvalSingleValue.cpp
 	"../include/EvalSingleValue.h"
 	<iostream>
 
-1325408370 /home/option0417/Dev/Workspace/TicTacToe/include/EvalSingleValue.h
+1325686429 /home/option0417/Dev/Workspace/TicTacToe/include/EvalSingleValue.h
 	"IRule.h"
 
-1325412803 /home/option0417/Dev/Workspace/TicTacToe/include/Common.h
+1325686429 /home/option0417/Dev/Workspace/TicTacToe/include/Common.h
 
-1325412851 source:/home/option0417/Dev/Workspace/TicTacToe/src/Common.cpp
+1325686429 source:/home/option0417/Dev/Workspace/TicTacToe/src/Common.cpp
 	"../include/Common.h"
+
+1326442131 /home/option0417/Dev/Workspace/TicTacToe/include/AlphaBeta.h
+	"Evaluation.h"
+	"MoveGenerator.h"
+	"IBoard.h"
+	"IElement.h"
+	"BoardView.h"
+
+1325947878 /home/option0417/Dev/Workspace/TicTacToe/include/MoveGenerator.h
+	"Common.h"
+	"IBoard.h"
+
+1326442131 source:/home/option0417/Dev/Workspace/TicTacToe/src/AlphaBeta.cpp
+	"../include/AlphaBeta.h"
+	<iostream>
+
+1325686429 /home/option0417/Dev/Workspace/TicTacToe/include/EvalDPairValue.h
+	"IRule.h"
+
+1325947876 source:/home/option0417/Dev/Workspace/TicTacToe/src/MoveGenerator.cpp
+	"../include/MoveGenerator.h"
+	<iostream>
+
+1325689884 source:/home/option0417/Dev/Workspace/TicTacToe/src/EvalDPairValue.cpp
+	"../include/EvalDPairValue.h"
+	<iostream>
 

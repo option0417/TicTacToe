@@ -7,13 +7,18 @@
 #include "../include/EvalOverGameRule.h"
 #include "../include/EvalPairValue.h"
 #include "../include/EvalSingleValue.h"
+#include "../include/EvalDPairValue.h"
+#include <iostream>
+
+Evaluation* Evaluation::instance = 0;
 
 Evaluation::Evaluation(IBoard* board) {
     this->board = board;
     pos = new Position();
     rule = new EvalOverGameRule(
-                new EvalPairValue(
-                    new EvalSingleValue(0)));
+               new EvalDPairValue(
+                   new EvalPairValue(
+                       new EvalSingleValue(0))));
 }
 
 Evaluation::~Evaluation() {
@@ -21,8 +26,23 @@ Evaluation::~Evaluation() {
     delete pos;
 }
 
+Evaluation* Evaluation::getInstance(IBoard* board) {
+	if (instance == 0) {
+		instance = new Evaluation(board);
+	}
+	return instance;
+}
+
 int Evaluation::getEvaluateValue() {
     return rule->check(calValueArray());
+}
+
+void Evaluation::addRule(IRule* rule) {
+	if (this->rule == 0) {
+		this->rule = rule;
+	} else {
+		this->rule->setRule(rule);
+	}
 }
 
 int* Evaluation::calValueArray() {

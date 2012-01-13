@@ -9,7 +9,7 @@ Core::Core() {
   view = new BoardView();
   board = new Board();
   pos = new Position();
-  evaluation = new Evaluation(board);
+  evaluation = Evaluation::getInstance(board);
   rule = new IndexBoundRule(new IsExistRule());
 
   board->initial();
@@ -56,7 +56,7 @@ int Core::startGame() {
 void Core::placeElement(Position* pos, bool turn) {
   try {
     if (rule->check(board, pos)) {
-      board->setElement(pos, turn);
+      board->placeElement(pos, turn);
     }
   } catch (const char* msg) {
     std::cout<<"Error Msg : "<<msg<<std::endl;
