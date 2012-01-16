@@ -8,3 +8,5 @@
 IEvalutedRule::IEvalutedRule(IEvalutedRule* nextRule) {
     this->nextRule = nextRule;
 }
+
+IEvalutedRule::~IEvalutedRule() {}

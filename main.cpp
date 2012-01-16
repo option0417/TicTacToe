@@ -1,7 +1,7 @@
 #include <cstdlib>
 #include <iostream>
 #include "include/Core.h"
-//#include "gtest/gtest.h"
+#include "gtest/gtest.h"
 #include "include/Board.h"
 #include "include/AlphaBeta.h"
 
