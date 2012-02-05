@@ -1,5 +1,5 @@
 #include "gtest/gtest.h"
-#include "../../include/Element.h"
+#include "Element.h"
 
 TEST(ElementTest, Element) {
     Element obj;

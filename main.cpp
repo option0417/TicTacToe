@@ -1,9 +1,9 @@
 #include <cstdlib>
 #include <iostream>
-#include "include/Core.h"
+#include "src/core/Core.h"
 #include "gtest/gtest.h"
-#include "include/Board.h"
-#include "include/AlphaBeta.h"
+#include "src/domain/Board.h"
+#include "src/ai/AlphaBeta.h"
 
 using namespace std;
 
